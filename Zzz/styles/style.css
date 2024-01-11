@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fc0093;
+  border-radius: 50px;
+}
+
+body {
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow-x: hidden;
+}
+
+.control {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#AllInBody {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 50px 0px;
+  background: linear-gradient(45deg, rgba(0, 238, 255, 0.842), rgba(255, 0, 149, 0.651)), url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#AllInBody #ContentWarpper {
+  width: 25vw;
+  min-height: 70vh;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 2px 10px #141414;
+          box-shadow: 1px 2px 10px #141414;
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicImg {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  overflow: hidden;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 5px solid #ff006a;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicDesc {
+  margin: 0px 0px 20px 0px;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicDesc h2 {
+  font-size: 2rem;
+  font-family: 'Reggae One', cursive;
+  color: #fc0093;
+  text-shadow: 1px 1px 2px black;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicDesc p {
+  font-weight: 900;
+  padding: 5px 10px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicControls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0px 0px 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicControls div {
+  cursor: pointer;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicControls div:nth-child(odd) i {
+  border: none;
+  border: 2px solid transparent;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicControls div:nth-child(odd) i:hover {
+  border-color: #ff0080;
+  background: none;
+  color: #ff0080;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicControls div i {
+  font-size: 1.1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #ff004c;
+  padding: 15px;
+  border-radius: 100%;
+  transition: 0.3s;
+  border: 2px solid #ff0080;
+}
+
+#AllInBody #ContentWarpper #WholeCardContainer #MusicControls div i:hover {
+  background: #ff0080;
+  color: white;
+}
+
+#AllInBody #ContentWarpper #Progress_elements {
+  padding: 10px 0px;
+  background: -webkit-gradient(linear, right top, left top, from(#00eeff), to(#ff006a));
+  background: linear-gradient(to left, #00eeff, #ff006a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Goldman', cursive;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px white;
+}
+
+#AllInBody #ContentWarpper #Progress_elements #Progressduration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#AllInBody #ContentWarpper #Progress_elements #ProgressMeterContainer {
+  width: 90%;
+  height: 7px;
+  background: white;
+  border-radius: 50px;
+  margin: 20px auto 5px auto;
+  cursor: pointer;
+}
+
+#AllInBody #ContentWarpper #Progress_elements #ProgressMeterContainer #ProgrssMeterChild {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, #00e1ff, #ff0077);
+  border-radius: 50px;
+}
+
+footer {
+  background: #ff0077;
+  padding: 5px 0px;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: cyan;
+}
+
+.anime {
+  -webkit-animation: imgAnime 3s linear infinite both;
+          animation: imgAnime 3s linear infinite both;
+}
+
+@-webkit-keyframes imgAnime {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes imgAnime {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  #ContentWarpper {
+    width: 40vw !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  * {
+    cursor: default !important;
+  }
+  #ContentWarpper {
+    width: 50vw !important;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  #ContentWarpper {
+    width: 90vw !important;
+  }
+  #ContentWarpper #MusicDesc p {
+    padding: 5px 2px !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
